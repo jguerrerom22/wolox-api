@@ -17,7 +17,7 @@ router.post('/login',[
     validateFields
 ],login );
 
-// Validate is token is valid
+// Validate if token is valid
 router.get('/',[
     validateJWT
 ], validateUserToken );

@@ -1,9 +1,8 @@
 const { response, request } = require('express');
 const jwt = require('jsonwebtoken');
-
 const User = require('../models/user');
 
-
+// Validate if current token is valid
 const validateJWT = async( req = request, res = response, next ) => {
 
     const token = req.header('x-token');
@@ -36,11 +35,7 @@ const validateJWT = async( req = request, res = response, next ) => {
             msg: 'Token not valid'
         })
     }
-
 }
-
-
-
 
 module.exports = {
     validateJWT

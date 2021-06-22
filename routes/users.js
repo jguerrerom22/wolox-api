@@ -21,7 +21,7 @@ router.post('/',[
     validateFields
 ], createUser );
 
-// Add coins to user
+// Add coin to user
 router.patch('/coin', [
     validateJWT,
     check('coin', 'Coin must not be empty').not().isEmpty().isString(),

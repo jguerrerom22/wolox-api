@@ -2,6 +2,7 @@ const { response } = require('express');
 const coingecko = require('../helpers/coingecko-api');
 const { User } = require('../models');
 
+// Get all the coins from coingecko according to the user currency
 const getAllCoins = async(req, res = response ) => {
 
     const { currency } = req.user;
@@ -17,6 +18,7 @@ const getAllCoins = async(req, res = response ) => {
     })));
 }
 
+// Get the information of the user coins
 const getMyCoins = async (req, res = response) => {
 
     let { top = 25, order = 'desc' } = req.query;
