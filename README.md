@@ -34,4 +34,4 @@ o
 node app
 ```
 
-##### Si la respuesta en consola es un *Server running on port xxx* y *Database online!* puedes empezar a realizar peticios
+##### Si la respuesta en consola es un *Server running on port xxx* y *Database online!* puedes empezar a realizar peticiones
